@@ -1,0 +1,507 @@
+/* adding google fonts ----------//---------- */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Poppins:wght@400;500;700&display=swap");
+/* font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* css variables to reuse same color 
+----------++---------- */
+:root {
+  --clr-primary: #cfe4f5;
+  /* --clr-secondary: #f02602; */
+
+  --clr-black: #111111;
+  --clr-white: #fefefe;
+  --clr-light: #282828;
+}
+
+::selection {
+  background-color: var(--clr-primary);
+  color: var(--clr-black);
+}
+
+/* css reset 
+----------++---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+
+  /* for responsive navigation */
+  position: relative;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+a,
+input,
+button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* repeated styles 
+----------++---------- */
+.container {
+  width: 1180px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: var(--clr-black);
+  border: 2px solid var(--clr-black);
+  color: var(--clr-white);
+  padding: 12px 45px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--clr-black);
+}
+
+.btn-round {
+  text-transform: capitalize;
+  background-color: transparent;
+  color: var(--clr-black);
+  border: 2px solid #11111185;
+  border-radius: 50px;
+  padding: 12px 60px 12px 45px;
+  position: relative;
+}
+
+.btn-round i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 15px;
+
+  transition-duration: 0.3s;
+  transition-property: right background-color color;
+}
+
+.btn-round:hover i {
+  right: 1px;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+/* group text style ----------++---------- */
+.group__top {
+  text-transform: uppercase;
+}
+
+.group__top img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.group__title {
+  margin-top: 24px;
+
+  font-size: calc(24px + 1vw);
+  line-height: 1.4;
+}
+
+/* header section style 
+----------++---------- */
+header {
+  width: 100%;
+  height: auto;
+  padding: 45px 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+
+  transition-duration: 0.3s;
+  transition-property: padding, background-color;
+}
+
+header.sticky {
+  background-color: #cfe4f52b;
+  padding: 20px 0;
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+header .container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--clr-black);
+}
+
+header .logo span {
+  font-weight: 400;
+  margin-right: 3px;
+}
+
+/* after the header style need to complete this hamburger icon style and design script than add container flex and other designs */
+/* hamburger icon style 
+----------++---------- */
+.hamb {
+  width: 32px;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 9;
+}
+
+.hamb span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--clr-black);
+
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+
+.hamb span#mid {
+  margin: 7px 0px;
+}
+
+.hamb.active span#top {
+  transform: translateY(9px) rotate(42deg);
+}
+
+.hamb.active span#mid {
+  opacity: 0;
+}
+
+.hamb.active span#bottom {
+  transform: translateY(-9px) rotate(-42deg);
+}
+
+/* responsive navigation style 
+----------++---------- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  z-index: 1;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-primary);
+  padding: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s left;
+}
+
+.nav.slide {
+  left: 0;
+}
+
+.nav .nav__menu {
+  display: grid;
+  gap: 24px;
+}
+
+.nav a {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--clr-black);
+}
+
+.nav a:hover {
+  color: #4480b0;
+}
+
+/* hero section style 
+----------++---------- */
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding: 200px 0 200px;
+
+  background-color: #fafbfc;
+  background-image: url(../img/pattern.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hero .container {
+  height: 100%;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero__description {
+  width: 45%;
+  max-width: 100%;
+}
+
+.hero__top {
+  text-transform: capitalize;
+  color: #444444;
+}
+
+.hero__title {
+  font-size: 48px;
+  margin: 42px 0;
+}
+
+.hero__text {
+  width: 380px;
+  max-width: 100%;
+  margin-bottom: 42px;
+}
+
+.hero__img {
+  width: 45%;
+}
+
+/* about section style 
+----------++---------- */
+.about,
+.skills,
+.portfolio,
+.testimonials,
+.awards,
+.contact {
+  padding: 150px 0;
+}
+
+.about .container,
+.skills .container,
+.testimonials .container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__right p {
+  color: var(--clr-light);
+  margin-bottom: 32px;
+}
+
+/* skills section style 
+----------++---------- */
+.skills {
+  background-color: #fafbfc;
+}
+
+.skills__right {
+  max-width: 100%;
+}
+
+.skills__text {
+  margin-bottom: 32px;
+}
+
+/* skill group style 
+----------++---------- */
+.skills__group {
+  max-width: 500px;
+}
+
+.skills__group li {
+  margin: 24px 0;
+}
+
+.skills__group li .bar {
+  background-color: var(--clr-primary);
+  display: block;
+  height: 3px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.skills__group li .bar span {
+  display: block;
+  height: 100%;
+
+  background-color: var(--clr-black);
+}
+
+.skills__group li .bar .design {
+  width: 90%;
+}
+
+.skills__group li .bar .art {
+  width: 80%;
+}
+
+.skills__group li .bar .branding {
+  width: 83%;
+}
+
+.skills__group li .bar .web {
+  width: 95%;
+}
+
+/* portfolio section style 
+----------++---------- */
+.portfolio .group__text {
+  text-align: center;
+}
+
+.portfolio__filter {
+  margin: 32px 0;
+}
+
+.portfolio__filter-nav {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.portfolio__filter-nav li {
+  cursor: pointer;
+  color: #969696;
+}
+
+.portfolio__filter-nav li:hover {
+  color: var(--clr-black);
+}
+
+.portfolio__gallery {
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+.portfolio__gallery .item {
+  margin-bottom: 24px;
+  max-width: 100%;
+  transition: 0.3s filter;
+
+  /* mixitup animation  */
+  opacity: 0;
+  animation: fade 0.3s ease-in forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.portfolio__gallery .item:hover {
+  filter: drop-shadow(7px 7px var(--clr-light));
+}
+
+.portfolio .action {
+  text-align: center;
+  margin-top: 48px;
+}
+
+
+/* contact section style 
+----------++---------- */
+.contact {
+  background-color: #fafbfc;
+  background-image: url(../img/pattern_contact.png);
+  background-repeat: no-repeat;
+  background-position: 0px -200px;
+  background-size: auto;
+}
+
+.contact .container {
+  width: 650px;
+}
+
+.contact .container > * {
+  margin-bottom: 32px;
+}
+
+.contact .group__title {
+  font-size: 48px;
+  max-width: 450px;
+}
+
+.contact__text {
+  max-width: 400px;
+}
+
+.contact .mail {
+  color: var(--clr-light);
+  border-bottom: 1px solid var(--clr-light);
+}
+
+.contact .mail:is(:hover, :active) {
+  color: #4771ee;
+  border-bottom: 1px solid #4771ee;
+}
+
+.contact .social {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact .social a {
+  color: var(--clr-light);
+}
+
+.contact .social a:is(:hover, :active) {
+  color: #4771ee;
+}

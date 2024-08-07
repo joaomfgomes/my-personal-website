@@ -1,0 +1,73 @@
+@media screen and (max-width: 825px) {
+  /* decrease hero text sizes  */
+  .hero {
+    height: auto;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* decrease hero padding  */
+  .hero {
+    padding: 150px 0 150px;
+  }
+
+  /* separate hero image and text  */
+  .hero__description {
+    width: 100%;
+    order: 2;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
+
+  .hero__img {
+    width: 60%;
+    order: 1;
+  }
+
+  /* adding design for about, skills, portfolio section  */
+  .about,
+  .skills,
+  .portfolio,
+  .testimonials,
+  .awards,
+  .contact {
+    padding: 80px 0;
+  }
+
+  .about .container,
+  .skills .container,
+  .testimonials .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* portfolio project section break */
+  .portfolio__gallery {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  /* decrease testimonials image size  */
+  .testimonials .container {
+    gap: 42px;
+  }
+
+  .testimonials__person {
+    text-align: center;
+  }
+
+  .testimonials__person img {
+    width: 70%;
+  }
+
+  /* awards section style  */
+  .awards__categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

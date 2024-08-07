@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Miguel Gomes</title>
+
+  <!-- adding favicon -->
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+  <!-- adding custom stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mquery.css">
+
+  <!-- adding line-icon -->
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- website header -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo"><span>JM</span>Gomes.</a>
+
+      <div id="hamb" class="hamb">
+        <span id="top"></span>
+        <span id="mid"></span>
+        <span id="bottom"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- responsive navigation -->
+  <nav class="nav">
+    <ul id="nav__menu" class="nav__menu">
+      <li class="nav__list">
+        <a href="#home" class="nav__link">Home</a>
+      </li>
+      <li class="nav__list">
+        <a href="#about" class="nav__link">About</a>
+      </li>
+      <li class="nav__list">
+        <a href="#skill" class="nav__link">Skill</a>
+      </li>
+      <li class="nav__list">
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+      </li>
+      <li class="nav__list">
+        <a href="#contact" class="nav__link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- main ----------//---------- -->
+  <main>
+
+    <!-- website hero section ----------//---------- -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero__description">
+          <span id="hero__top">👋 Hi! everyone</span>
+          <h1 class="hero__title">João Miguel <br> Data Analyst</h1>
+
+          <p class="hero__text">Expert in data analysis, visualization, statistical modeling, business intelligence, and predictive analytics.</p>
+
+          <div class="action">
+            <a href="/assets/resume.pdf" class="btn btn-round">View my resume<i class="lni lni-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <img src="assets/img/hero_image.png" alt="" class="hero__img">
+      </div>
+    </section>
+
+    <!-- website about section markup ----------//---------- -->
+    <article id="about" class="about">
+      <div class="container">
+
+        <div class="group__text">
+          <p class="group__top">
+            <img src="assets/img/line.svg" alt=""> Who am I
+          </p>
+
+          <h2 class="group__title">
+            I’m a researcher & data analysis enthusiast based in Braga, Portugal.
+          </h2>
+        </div>
+
+        <div class="about__right">
+          <p class="about__right-text">
+            I recently graduated with a Master’s degree in Management Information Systems while simultaneously working as a Researcher at the CCG/ZGDV - ICT Innovation Institute. 
+            During this time, I developed skills in data visualization, data cleaning, critical thinking, and tools such as Python, R, Excel, and SQL.
+          </p>
+
+          <p class="about__right-text-bottom">
+            Outside of work and studies, I enjoy staying active through various sports, including surfing, boxing, running, and swimming. 
+            These activities help me maintain physical fitness and also provide opportunities to meet new people. 
+            I'm also passionate about traveling, a passion that deepened during my Erasmus experience.
+            This opportunity inspired a desire to explore different cultures, gain new perspectives on life, and acquire invaluable experiences.
+          </p>
+
+          <a href="#" class="btn">About me</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- skill section markup ----------//---------- -->
+    <section id="skill" class="skills">
+      <div class="container">
+
+        <div class="group__text">
+          <p class="group__top">
+            <img src="assets/img/line.svg" alt=""> My skills
+          </p>
+
+          <h2 class="group__title">
+            Skills that I have developed to deliver optimal insights and solutions for my projects.
+          </h2>
+        </div>
+
+        <div class="skills__right">
+          <p class="skills__text">
+            Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae.
+          </p>
+
+          <ul class="skills__group">
+            <li>
+              <p>Website Design</p>
+              <span class="bar"><span class="design"></span></span>
+            </li>
+            <li>
+              <p>Python</p>
+              <span class="bar"><span class="art"></span></span>
+            </li>
+            <li>
+              <p>Tableau</p>
+              <span class="bar"><span class="branding"></span></span>
+            </li>
+            <li>
+              <p>SQL</p>
+              <span class="bar"><span class="web"></span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section markup ----------//---------- -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="group__text">
+          <p class="group__top">
+            <img src="assets/img/line.svg" alt=""> Portfolio
+          </p>
+
+          <h2 class="group__title">
+            Latest Personal Projects
+          </h2>
+        </div>
+
+        <div class="portfolio__filter">
+          <ul class="portfolio__filter-nav">
+            <li data-filter="*">All</li>
+            <li data-filter=".web">Data Importing</li> <!-- Atenção a mudar as tags ".web" -->
+            <li data-filter=".data-cleaning">Data Cleaning</li>
+            <li data-filter=".magazines">Data Manipulation</li>
+            <li data-filter=".package">Data Visualization</li>
+          </ul>
+        </div>
+
+        <div class="portfolio__gallery">
+          <a href="https://www.buymeacoffee.com/codermj/extras" data-order="1" target="_blank"
+            class="mix item data-cleaning">
+            <img src="assets/img/portfolio/portfolio-1.png" alt="">
+          </a>
+          <!-- <a href="https://www.buymeacoffee.com/codermj/extras" data-order="2" target="_blank" class="mix item web">
+            <img src="assets/img/portfolio/portfolio-2.png" alt="">
+          </a>
+          <a href="https://www.buymeacoffee.com/codermj/extras" data-order="3" target="_blank"
+            class="mix item magazines">
+            <img src="assets/img/portfolio/portfolio-3.png" alt="">
+          </a>
+          <a href="https://www.buymeacoffee.com/codermj/extras" data-order="4" target="_blank" class="mix item package">
+            <img src="assets/img/portfolio/portfolio-4.png" alt="">
+          </a>
+          <a href="https://www.buymeacoffee.com/codermj/extras" data-order="5" target="_blank" class="mix item web">
+            <img src="assets/img/portfolio/portfolio-5.png" alt="">
+          </a>
+          <a href="https://www.buymeacoffee.com/codermj/extras" data-order="6" target="_blank" class="mix item web">
+            <img src="assets/img/portfolio/portfolio-6.png" alt="">
+          </a>
+          <a href="https://www.buymeacoffee.com/codermj/extras" data-order="7" target="_blank"
+            class="mix item branding">
+            <img src="assets/img/portfolio/portfolio-7.png" alt="">
+          </a>
+          <a href="https://www.buymeacoffee.com/codermj/extras" data-order="8" target="_blank" class="mix item package">
+            <img src="assets/img/portfolio/portfolio-8.png" alt="">
+          </a>
+          <a href="https://www.buymeacoffee.com/codermj/extras" data-order="9" target="_blank" class="mix item package">
+            <img src="assets/img/portfolio/portfolio-9.png" alt="">
+          </a> -->
+        </div>
+
+        <div class="action">
+          <a href="#" class="btn">View all works</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer section markup ----------//---------- -->
+    <footer id="contact" class="contact">
+      <div class="container">
+
+        <div class="group__text">
+          <h2 class="group__title">
+            Interested in connecting ?
+          </h2>
+        </div>
+
+        <p class="contact__text">
+          Feel free to contact me if you’d like to collaborate or just have a conversation.
+        </p>
+
+        <a href="mailto:joaomfg94@gmail.com" class="mail">Send mail</a>
+
+        <div class="social">
+          <a href="https://www.linkedin.com/in/joaomfgomes/">
+            <i class="lni lni-linkedin-original"></i>
+            Linkedin
+          </a>
+          <a href="https://www.instagram.com/joaomfgomes/">
+            <i class="lni lni-instagram-fill"></i>
+            Instagram
+          </a>
+          <a href="https://github.com/joaomfgomes">
+            <i class="lni lni-github-original"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- adding mixitup js files for portfolio filtering -->
+  <script src="assets/js/mixitup.min.js"></script>
+
+  <!-- adding custom JavaScript file -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
