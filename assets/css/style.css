@@ -143,8 +143,7 @@ ul {
 
 .group__title {
   margin-top: 24px;
-
-  font-size: calc(24px + 1vw);
+  font-size: calc(20px + 1vw);
   line-height: 1.4;
 }
 
@@ -299,20 +298,26 @@ header .logo span {
 }
 
 .hero__top {
+  display: inline;
   text-transform: capitalize;
   color: #444444;
 }
 
 .hero__title {
-  font-size: 48px;
-  margin: 42px 0;
+  font-size: 40px;
+  margin-top: 15px;  
+  margin-bottom: 0px;  
 }
 
 .hero__text {
   width: 380px;
   max-width: 100%;
+  line-height: 1.8;
+  color: #444444;
   margin-bottom: 42px;
+  white-space: pre-line;
 }
+
 
 .hero__img {
   width: 45%;
@@ -333,14 +338,35 @@ header .logo span {
 .skills .container,
 .testimonials .container {
   display: grid;
-  gap: 24px;
+  gap: 20px;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .about__right p {
-  color: var(--clr-light);
-  margin-bottom: 32px;
+   margin-bottom: 15px;
+   line-height: 1.8;
+   font-size: 1.10rem;
+   color: #2a2a2a;
+   padding-top: 60px; /
 }
+
+.stagger-text span {
+  display: block;
+}
+
+.step-1 {
+  margin-left: 40px; /* antes 20px */
+}
+
+.step-2 {
+  margin-left: 80px; /* antes 40px */
+}
+
+.step-3 {
+  margin-left: 120px; /* antes 60px */
+}
+
+
 
 /* skills section style 
 ----------++---------- */

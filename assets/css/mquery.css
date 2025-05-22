@@ -70,4 +70,17 @@
   .awards__categories {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  /* stagger steps on small screens (escadinha adaptada) */
+  .stagger-text .step-1 {
+    margin-left: 20px;
+  }
+
+  .stagger-text .step-2 {
+    margin-left: 40px;
+  }
+
+  .stagger-text .step-3 {
+    margin-left: 60px;
+  }
 }
