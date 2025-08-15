@@ -453,6 +453,7 @@ header .logo span {
   column-count: 3;
   -webkit-column-gap: 24px;
   column-gap: 24px;
+  display: flex;
 }
 
 .portfolio__gallery .item {
