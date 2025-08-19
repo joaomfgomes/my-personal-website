@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Miguel Gomes</title>
+
+  <!-- adding favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!-- adding custom stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mquery.css">
+
+  <!-- adding line-icon -->
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- website header -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo"><span>JM</span>Gomes.</a>
+
+      <div id="hamb" class="hamb">
+        <span id="top"></span>
+        <span id="mid"></span>
+        <span id="bottom"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- responsive navigation -->
+  <nav class="nav">
+    <ul id="nav__menu" class="nav__menu">
+      <li class="nav__list">
+        <a href="#home" class="nav__link">Home</a>
+      </li>
+      <li class="nav__list">
+        <a href="#about" class="nav__link">About</a>
+      </li>
+      <li class="nav__list">
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+      </li>
+      <li class="nav__list">
+        <a href="#contact" class="nav__link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- main ----------//---------- -->
+  <main>
+
+    <!-- website hero section ----------//---------- -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero__description">
+          <span id="hero__top">👋 Hi! everyone</span>
+          <h1 class="hero__title">João Miguel Gomes</h1>
+          
+          <p class="hero__text">
+            Passionate about transforming data into meaningful insights.
+            <strong>Always ready to learn and grow 🌱</strong>
+          </p>  
+
+          <div class="action">
+            <a href="/assets/pdf/JoaoMiguelGomes_CV.pdf" class="btn btn-round">View my resume<i class="lni lni-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <img src="assets/img/cartoon.png" alt="" class="hero__img">
+      </div>
+    </section>
+
+    <!-- website about section markup ----------//---------- -->     
+    <article id="about" class="about">
+      <div class="container">
+
+        <div class="group__text">
+          <p class="group__top">
+            <img src="assets/img/line.svg" alt=""> Who am I
+          </p>
+
+          <h2 class="group__title stagger-text">
+            <span>I work with data</span>
+            <span class="step-1">to make sense,</span>
+            <span class="step-2">to solve,</span>
+            <span class="step-3">to simplify.</span>
+            <br>
+            <span>I am João.</span>
+          </h2>
+        </div>
+
+        <div class="about__right">
+          <p class="about__right-text">
+            I help turn data into systems that make sense.<br>
+            From pipelines to analytics, I work with Python, SQL, and open tools.<br>
+            Always with a focus on clarity, quality, and function.
+
+          <p class="about__right-text-bottom">
+            Beyond data, I move.<br> 
+            Martial arts keep me sharp.<br>
+            Running gives me rhythm.<br>
+            Travel keeps me learning.
+          </p>
+
+          <!-- <a href="#" class="btn">About me</a> -->
+        </div>
+      </div>
+    </article>
+
+    
+    <!-- portfolio section markup ----------//---------- -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="group__text">
+          <p class="group__top">
+            <img src="assets/img/line.svg" alt=""> Portfolio
+          </p>
+
+          <h2 class="group__title">
+            Personal Projects
+          </h2>
+        </div>
+
+        <div class="portfolio__filter">
+          <!-- <ul class="portfolio__filter-nav">
+            <li data-filter="*">All</li>
+            <li data-filter=".web">Data Importing</li>
+            <li data-filter=".data-cleaning">Data Cleaning</li>
+            <li data-filter=".magazines">Data Manipulation</li>
+            <li data-filter=".package">Data Visualization</li>
+          </ul> -->
+        </div>
+
+        <div class="portfolio__gallery">
+          <a href="https://public.tableau.com/views/tableau-sales-project/SalesDashboard?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" data-order="1" target="_blank" class="mix item web">
+            <img src="assets/img/portfolio/sales-dashboard.png" alt="">
+          </a>
+
+          <a href="https://github.com/joaomfgomes/data-sql-warehouse-project" data-order="1" target="_blank" class="mix item data-cleaning">
+            <img src="assets/img/portfolio/data-architecture.png" alt="">
+          </a>
+
+          <a href="https://daa08cbe654bee18db.gradio.live/" data-order="1" target="_blank" class="mix item magazines">
+            <img src="assets/img/portfolio/semantic-book-recommender.png" alt="">
+          </a>
+        </div>
+
+
+
+        <!-- <div class="portfolio__gallery">
+          <a href="https://github.com/joaomfgomes/tableau-projects" data-order="1" target="_blank"
+            class="mix item web">
+            <img src="assets/img/portfolio/tableau-sales-dashboard.png" alt="">
+          </a>
+        </div>
+
+        <div class="portfolio__gallery">
+          <a href="https://github.com/joaomfgomes/data-sql-warehouse-project" data-order="1" target="_blank"
+            class="mix item data-cleaning">
+            <img src="assets/img/portfolio/data-architecture.png" alt="">
+          </a>
+        </div>
+
+        <div class="portfolio__gallery">
+          <a href="https://github.com/joaomfgomes/data-sql-warehouse-project" data-order="1" target="_blank"
+            class="mix item magazines">
+            <img src="assets/img/portfolio/data-architecture.png" alt="">
+          </a>
+        </div> -->
+
+        <div class="action">
+          <a href="https://github.com/joaomfgomes" class="btn">View all works</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer section markup ----------//---------- -->
+    <footer id="contact" class="contact">
+      <div class="container">
+
+        <div class="group__text">
+          <h2 class="group__title">
+            Interested in connecting ?
+          </h2>
+        </div>
+
+        <p class="contact__text">
+          Feel free to contact me if you had like to collaborate or just have a conversation.
+        </p>
+
+        <a href="mailto:joaomfg94@gmail.com" class="mail">Send mail</a>
+
+        <div class="social">
+          <a href="https://www.linkedin.com/in/joaomfgomes/">
+            <i class="lni lni-linkedin-original"></i>
+            Linkedin
+          </a>
+          <a href="https://github.com/joaomfgomes">
+            <i class="lni lni-github-original"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- adding mixitup js files for portfolio filtering -->
+  <script src="assets/js/mixitup.min.js"></script>
+
+  <!-- adding custom JavaScript file -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
